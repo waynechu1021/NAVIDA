@@ -5,9 +5,7 @@
     <em>A lightweight VLN framework with inverse dynamics supervision for action-grounded visual dynamics</em>
   </p>
 
-  <br>
 
-  <!-- Badges -->
   <p>
     <a href="https://arxiv.org/abs/2601.18188">
       <img src="https://img.shields.io/badge/📄 Paper-ArXiv-brown?logo=arxiv&logoColor=white" alt="Paper">
@@ -92,7 +90,7 @@ pip install dtw fastdtw gym
 **4. Install NaVIDA Dependencies**
 ```bash
 pip install peft trl==0.16.0 transformers==4.50.3 tensorboardx qwen_vl_utils deepspeed distilabel wandb==0.18.3
-pip install numpy==1.24.0 numba==0.60.0 tqdm opencv-python
+pip install numpy==1.24.0 numba==0.60.0 tqdm opencv-python 
 pip install vllm==0.9.1 torch torchvision protobuf==3.20
 pip install flash-attn --no-build-isolation --no-cache-dir
 ```
