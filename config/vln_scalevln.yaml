@@ -1,0 +1,54 @@
+# @package _global_
+
+defaults:
+  - /habitat: habitat_config_base
+  - /habitat/task: vln_r2r
+  - /habitat/simulator/agents@habitat.simulator.agents.main_agent: rgbd_agent
+  - /habitat/dataset: r2rvlnce_v1
+  - /habitat/task/lab_sensors:
+    - gps_sensor
+    - compass_sensor
+  - /habitat/task/measurements/oracle_success@habitat.task.measurements.oracle_success
+  - _self_
+
+habitat:
+  environment:
+    max_episode_steps: 500
+    iterator_options:
+      max_scene_repeat_steps: 50000
+      shuffle: False
+  simulator:
+    agents:
+      main_agent:
+        sim_sensors:
+          rgb_sensor:
+            width: 640
+            height: 480
+            hfov: 90
+    forward_step_size: 0.25
+    turn_angle: 15
+    habitat_sim_v0:
+      gpu_device_id: 0
+  task:
+    measurements:
+      path_length:
+        type: PathLength
+      distance_to_goal:
+        type: DistanceToGoal
+        distance_to: POINT
+      success:
+        type: Success
+        success_distance: 3.0
+      spl:
+        type: SPL
+      oracle_success:
+        type: OracleSuccess
+        success_distance: 3.0
+      oracle_navigation_error:
+        type: OracleNavigationError
+        
+  dataset:
+    type: R2RVLNCE-v1
+    split: train
+    scenes_dir: /nvme-ssd1/zwy/data/scene_dataset/
+    data_path: /nvme-ssd1/zwy/data/streamvln/ScaleVLN/scalevln_subset_150k.json.gz
