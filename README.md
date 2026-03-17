@@ -20,16 +20,12 @@
 </p>
 
 
-<br>
-
 ## 📰 News
 
 | Date | News |
 |:---:|:---|
 | **2026-03-17** | 🔥 **Code Release**: [Checkpoints](https://huggingface.co/waynechu/NaVIDA/) and full code are now available! |
 | **2026-01-26** | 📄 **Paper Release**: Paper is available on [arXiv](https://arxiv.org/abs/2601.18188)! |
-
-<br>
 
 ## 📖 Abstract
 
@@ -41,8 +37,6 @@ NaVIDA is a lightweight Vision-Language Navigation (VLN) framework that incorpor
 - 🔄 **Hierarchical Action Chunking**: Organizes trajectories into multi-step chunks for better long-horizon planning
 - 🚀 **Lightweight Design**: Efficient framework suitable for real-world deployment
 - 🏆 **State-of-the-art Performance**: Achieves competitive results on VLN-CE benchmarks
-
-<br>
 
 
 <p align="center">
@@ -97,7 +91,7 @@ pip install flash-attn --no-build-isolation --no-cache-dir
 
 <br>
 
-### 📁 Data Preparation
+## 📁 Data Preparation
 
 #### Step 1: Scene Datasets
 
@@ -143,7 +137,6 @@ data/
 
 > **Note**: You can also prepare your DAgger data in the same format.
 
-<br>
 
 ## 🔥 Training
 
@@ -151,7 +144,6 @@ data/
 ./scripts/train.sh
 ```
 
-<br>
 
 ## 🧭 Evaluation
 
@@ -173,7 +165,6 @@ data/
 ./scripts/eval_vllm.sh
 ```
 
-<br>
 
 ## 🏆 Checkpoints
 
@@ -181,7 +172,6 @@ data/
 |:---:|:---:|
 | NaVIDA-3B | [HuggingFace](https://huggingface.co/Arvil/Qwen2.5-VL-3B_sft_r2r_envdrop_multiturn) |
 
-<br>
 
 ## 📈 Results
 
