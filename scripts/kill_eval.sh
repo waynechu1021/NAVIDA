@@ -1,0 +1,1 @@
+ps aux | grep 'eval.py' | grep 'src'   | awk '{print $2}' | xargs kill

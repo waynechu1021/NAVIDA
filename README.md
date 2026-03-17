@@ -4,11 +4,9 @@
   <p style="font-size: 18px; color: #666;">
     <em>A lightweight VLN framework with inverse dynamics supervision for action-grounded visual dynamics</em>
   </p>
+</div>
 
-  <br>
-
-  <!-- Badges -->
-  <p>
+<p align="center">
     <a href="https://arxiv.org/abs/2601.18188">
       <img src="https://img.shields.io/badge/📄 Paper-ArXiv-brown?logo=arxiv&logoColor=white" alt="Paper">
     </a>
@@ -19,10 +17,8 @@
       <img src="https://img.shields.io/github/stars/waynechu1021/NAVIDA?color=yellow" alt="Stars">
     </a>
 
-  </p>
-</div>
+</p>
 
-<br>
 
 ## 📰 News
 
@@ -30,8 +26,6 @@
 |:---:|:---|
 | **2026-03-17** | 🔥 **Code Release**: [Checkpoints](https://huggingface.co/waynechu/NaVIDA/) and full code are now available! |
 | **2026-01-26** | 📄 **Paper Release**: Paper is available on [arXiv](https://arxiv.org/abs/2601.18188)! |
-
-<br>
 
 ## 📖 Abstract
 
@@ -43,8 +37,6 @@ NaVIDA is a lightweight Vision-Language Navigation (VLN) framework that incorpor
 - 🔄 **Hierarchical Action Chunking**: Organizes trajectories into multi-step chunks for better long-horizon planning
 - 🚀 **Lightweight Design**: Efficient framework suitable for real-world deployment
 - 🏆 **State-of-the-art Performance**: Achieves competitive results on VLN-CE benchmarks
-
-<br>
 
 
 <p align="center">
@@ -92,14 +84,14 @@ pip install dtw fastdtw gym
 **4. Install NaVIDA Dependencies**
 ```bash
 pip install peft trl==0.16.0 transformers==4.50.3 tensorboardx qwen_vl_utils deepspeed distilabel wandb==0.18.3
-pip install numpy==1.24.0 numba==0.60.0 tqdm opencv-python
+pip install numpy==1.24.0 numba==0.60.0 tqdm opencv-python 
 pip install vllm==0.9.1 torch torchvision protobuf==3.20
 pip install flash-attn --no-build-isolation --no-cache-dir
 ```
 
 <br>
 
-### 📁 Data Preparation
+## 📁 Data Preparation
 
 #### Step 1: Scene Datasets
 
@@ -122,7 +114,7 @@ data/
 |:---:|:---:|
 | R2R VLN-CE Episodes | [Google Drive](https://drive.google.com/file/d/1fo8F4NKgZDH-bPSdVU3cONAkt5EW-tyr/view) |
 | RxR VLN-CE Episodes | [Google Drive](https://drive.google.com/file/d/145xzLjxBaNTbVgBfQ8e9EsBAV8W-SM0t/view) |
-| ScaleVLN Subset | [HuggingFace](https://huggingface.co/datasets/cywan/StreamVLN-Trajectory-Data/blob/main/ScaleVLN/scalevln_subset_150k.json.gz) |
+| ScaleVLN Subset | [HuggingFace](https://huggingface.co/datasets/cywan/StreamVLN-Trajectory-Data/tree/main/ScaleVLN) |
 
 #### Step 3: Data Processing (Training Only)
 
@@ -145,7 +137,6 @@ data/
 
 > **Note**: You can also prepare your DAgger data in the same format.
 
-<br>
 
 ## 🔥 Training
 
@@ -153,7 +144,6 @@ data/
 ./scripts/train.sh
 ```
 
-<br>
 
 ## 🧭 Evaluation
 
@@ -175,15 +165,13 @@ data/
 ./scripts/eval_vllm.sh
 ```
 
-<br>
 
 ## 🏆 Checkpoints
 
 | Model  | Link |
 |:---:|:---:|
-| NaVIDA-3B | [HuggingFace](https://huggingface.co/Arvil/Qwen2.5-VL-3B_sft_r2r_envdrop_multiturn) |
+| NaVIDA-3B | [HuggingFace](https://huggingface.co/waynechu/NaVIDA/) |
 
-<br>
 
 ## 📈 Results
 
@@ -197,7 +185,6 @@ NaVIDA achieves state-of-the-art performance on both R2R and RxR benchmarks with
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | NaVILA | 8B | 54.0 | 49.0 | 5.22 | 62.5 |
 | StreamVLN | 7B | 56.9 | 51.9 | 4.98 | 64.2 |
-| MonoDream | 2B | 55.8 | 49.1 | 5.45 | 61.5 |
 | **NaVIDA (Ours)** | **3B** | **61.4** | **54.7** | **4.32** | **69.5** |
 </details>
 <br>
@@ -208,12 +195,10 @@ NaVIDA achieves state-of-the-art performance on both R2R and RxR benchmarks with
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | NaVILA | 8B | 49.3 | 44.0 | 58.8 | 6.77 |
 | StreamVLN | 7B | 52.9 | 46.0 | 61.9 | 6.22 |
-| NavFoM | 7B | 57.4 | 49.4 | 60.2 | 5.51 |
 | **NaVIDA (Ours)** | **3B** | **57.4** | **49.6** | **67.0** | **5.23** |
 
 </details>
 
-<br>
 
 ## 🔗 Citation
 
@@ -228,7 +213,6 @@ If you find our work helpful, please consider starring this repo :star: and cite
 }
 ```
 
-<br>
 
 ## 👏 Acknowledgements
 
