@@ -4,9 +4,9 @@
   <p style="font-size: 18px; color: #666;">
     <em>A lightweight VLN framework with inverse dynamics supervision for action-grounded visual dynamics</em>
   </p>
+</div>
 
-
-  <p>
+<p align="center">
     <a href="https://arxiv.org/abs/2601.18188">
       <img src="https://img.shields.io/badge/📄 Paper-ArXiv-brown?logo=arxiv&logoColor=white" alt="Paper">
     </a>
@@ -17,8 +17,8 @@
       <img src="https://img.shields.io/github/stars/waynechu1021/NAVIDA?color=yellow" alt="Stars">
     </a>
 
-  </p>
-</div>
+</p>
+
 
 <br>
 
