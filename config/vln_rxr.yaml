@@ -50,7 +50,7 @@ habitat:
       ndtw:
         type: NDTW
         success_distance: 3.0
-        gt_path: /nvme-ssd1/zwy/data/RxR_VLNCE_v0/{split}/{split}_{role}_gt.json.gz
+        gt_path: data/RxR_VLNCE_v0/{split}/{split}_{role}_gt.json.gz
         
         
   dataset:
