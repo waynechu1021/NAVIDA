@@ -70,17 +70,17 @@ config = {
     },
     'rxr': {
         'image_path': 'data/images/rxr',
-        'annotation_path': 'lam_vln/data/sub_dataset/rxr.jsonl',
+        'annotation_path': 'data/sub_dataset/rxr.jsonl',
         'split_method': spilt_method,
     },
     'envdrop': {
         'image_path': 'data/images/envdrop',
-        'annotation_path': 'lam_vln/data/sub_dataset/envdrop.jsonl',
+        'annotation_path': 'data/sub_dataset/envdrop.jsonl',
         'split_method': spilt_method,
     },
     'scalevln': {
         'image_path': 'data/images/scalevln',
-        'annotation_path': 'lam_vln/data/sub_dataset/scalevln.jsonl',
+        'annotation_path': 'data/sub_dataset/scalevln.jsonl',
         'split_method': spilt_method,
     },
 }

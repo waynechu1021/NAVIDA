@@ -50,5 +50,5 @@ habitat:
   dataset:
     type: R2RVLNCE-v1
     split: train
-    scenes_dir: /nvme-ssd1/zwy/data/scene_dataset/
-    data_path: /nvme-ssd1/zwy/data/streamvln/ScaleVLN/scalevln_subset_150k.json.gz
+    scenes_dir: data/scene_dataset/
+    data_path: data/streamvln/ScaleVLN/scalevln_subset_150k.json.gz

@@ -58,5 +58,5 @@ habitat:
     split: train
     roles: [guide]
     languages: ["en-US", "en-IN"]
-    scenes_dir: /nvme-ssd1/zwy/data/scene_dataset/
-    data_path: /nvme-ssd1/zwy/data/RxR_VLNCE_v0/{split}/{split}_{role}.json.gz
+    scenes_dir: data/scene_dataset/
+    data_path: data/RxR_VLNCE_v0/{split}/{split}_{role}.json.gz

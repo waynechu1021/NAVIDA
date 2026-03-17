@@ -5,7 +5,7 @@ export NCCL_P2P_LEVEL=NVL
 CUDA_VISIBLE_DEVICES=2,3,4,5 deepspeed --master_port 25420 src/train/train.py \
     --deepspeed scripts/zero2.json \
     --dataset_name data/only_r2r_idm_vln_mix_data.jsonl \
-    --model_name_or_path /nvme-ssd1/zwy/.cache/Qwen2.5-VL-3B-Instruct \
+    --model_name_or_path .cache/Qwen2.5-VL-3B-Instruct \
     --num_train_epochs 1 \
     --bf16 \
     --torch_dtype bfloat16 \
